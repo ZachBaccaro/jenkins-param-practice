@@ -39,7 +39,7 @@ pipeline {
 
         stage('Integration Testing') {
             steps {
-                sh "sleep 5s"
+                sh "sleep ${SLEEP_TIME}"
                 sh "echo Testing using CURL commands......."
             }
         }
